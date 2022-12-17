@@ -77,17 +77,17 @@ ru:
         username: 'Имя'
         password: 'Пароль'
         new:
-          username: 'Ник'
+          username: 'Возраст'
           name: 'Имя'
           password: 'Пароль'
           password_confirmation: 'Подтверждение пароля'
           sign_up: 'Войти'
     hints:
       defaults:
-        username: 'Заполните поле'
+        username: ''
     placeholders:
       defaults:
-        username: 'Ваше имя'
+        username: ''
   new:
    sign_in: 'Войти'
    sign_up: "Зарегистрироваться"

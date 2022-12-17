@@ -1,6 +1,6 @@
 <div class="column is-one-quarter">
 	<nav class="panel">
-		<p class="panel-heading"><%= t('new.profile')%></p>
+		<p class="panel-heading"><%= t('Профиль')%></p>
 		<div class="panel-block">
 			<article class="media">
 				<div class="media-left">
@@ -20,7 +20,13 @@
 			<div class="level is-mobile">
 				<div class="level-item has-centered-text">
 					<div>
-						<p class="title is-6"><%=t("new.posts") %>: <%= current_user.posts.count %></p>
+					  <a href="/scribble/index"><p>Скраббл</p>  
+					  <a href="/memory_cards/index"><p>Карточки</p>  
+					  <a href="/speed_writing/index"><p>Скоростная печать</p>  
+					  <a href="/word_guessing/index"><p>Угадай слово</p>  
+					  <a href="/wordle/index"><p>Игра в слова</p>  
+					  <a href="/math/index"><p>Быстрые вычисления</p>  
+					  <a href="/speed_reading/index"><p>Скорочтение</p>  
 					</div>
 				</div>
 			</div>

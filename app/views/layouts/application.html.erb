@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Diary</title>
+    <title>Brain_power</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
@@ -24,7 +24,7 @@
   	<nav class="navbar is-primary">
   		<div class="navbar-brand">
   		<%= link_to root_path, class: "navbar-item" do %>
-  			<h1 class="title is-5">Diary</h1>
+  			<h1 class="title is-5">Brain_power</h1>
 			              <p class="control">
 
   		<% end %>
@@ -39,26 +39,21 @@
 				<div class="navbar-end">
           <div class="navbar-item">
 					<div class="field is-grouped">
-						
-        				<%= link_to 'Русский',   root_path(locale: 'ru'), class: "button is-primary ",locale: "en" %>
-
-       					 <%= link_to 'English',  root_path(locale: 'en'), class: "button is-primary ", locale: "ru" %>
   
             <% if user_signed_in? %>
               <p class="control">
                 <%= link_to current_user.email, edit_user_registration_path, class: "button is-primary" %>
               </p>
               <p>
-			  	<%= link_to t('new.new_post'), root_path, class: "button is-primary is-inverted" %></li>
 
-                <%= link_to t('new.logout'), destroy_user_session_path, method: :delete, class:"button is-primary" %>
+                <%= link_to t('Выйти'), destroy_user_session_path, method: :delete, class:"button is-primary" %>
               </p>
             <% else %>
             <p class="control">
-              <%= link_to t('new.sign_in'), new_user_session_path, class: "button is-primary" %>
+              <%= link_to t('Войти'), new_user_session_path, class: "button is-primary" %>
             </p>
 						<p class="control">
-              <%= link_to t('new.sign_up'), new_user_registration_path, class: "button is-primary" %>
+              <%= link_to t('Зарегистрироваться'), new_user_registration_path, class: "button is-primary" %>
             </p>
             <% end %>
             </div>
